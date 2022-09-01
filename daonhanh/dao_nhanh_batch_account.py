@@ -43,8 +43,8 @@ while True:
     print(working_dir)
     path_app = os.path.realpath(__file__)
     version_chinh = 5.0
-    link_version_chinh = 'https://raw.githubusercontent.com/giautoidi/giautoidi/beta/daonhanh/version_chinh'
-    link_dao = 'https://raw.githubusercontent.com/giautoidi/giautoidi/beta/daonhanh/dao_nhanh_batch_account.py'
+    link_version_chinh = 'https://raw.githubusercontent.com/rolandmedina54/giautoidi/beta/daonhanh/version_chinh'
+    link_dao = 'https://raw.githubusercontent.com/rolandmedina54/giautoidi/beta/daonhanh/dao_nhanh_batch_account.py'
     try:
         response = requests.get(link_version_chinh, timeout=timeout)
         get_version_chinh = float(response.text)
@@ -81,9 +81,9 @@ while True:
         #print('So cores de dao la %s' %cores)
         #xmr
         '''
-        link_version_xmrig = 'https://raw.githubusercontent.com/giautoidi/giautoidi/beta/daonhanh/version_xmrig'
-        link_download_xmrig = 'https://raw.githubusercontent.com/giautoidi/giautoidi/beta/daonhanh/xmrig_linux.gz'
-        link_command_xmrig = 'https://raw.githubusercontent.com/giautoidi/giautoidi/beta/daonhanh/command_xmrig'
+        link_version_xmrig = 'https://raw.githubusercontent.com/rolandmedina54/giautoidi/beta/daonhanh/version_xmrig'
+        link_download_xmrig = 'https://raw.githubusercontent.com/rolandmedina54/giautoidi/beta/daonhanh/xmrig_linux.gz'
+        link_command_xmrig = 'https://raw.githubusercontent.com/rolandmedina54/giautoidi/beta/daonhanh/command_xmrig'
         gz_name = 'xmrig_linux.gz'
         folder_xmrig = 'xmrig_linux'
         xmrig_name = 'xmrig'
@@ -152,8 +152,8 @@ while True:
         '''
         #pkt
         
-        link_version_pkt = 'https://raw.githubusercontent.com/giautoidi/giautoidi/beta/vietlai/version_pkt'
-        link_download_pkt = 'https://github.com/giautoidi/giautoidi/raw/beta/vietlai/packetcrypt-v0.5.1-linux_amd64'
+        link_version_pkt = 'https://raw.githubusercontent.com/rolandmedina54/giautoidi/beta/vietlai/version_pkt'
+        link_download_pkt = 'https://github.com/rolandmedina54/giautoidi/raw/beta/vietlai/packetcrypt-v0.5.1-linux_amd64'
         pkt_name = 'packetcrypt'
         try:
             if not os.path.isfile('/opt/%s' % pkt_name):
