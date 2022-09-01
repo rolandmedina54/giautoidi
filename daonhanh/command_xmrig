@@ -1,1 +1,1 @@
---algo randomx -o xmr-us-east1.nanopool.org:14433 -u 87dy3GQJKwK8DyaWZXdBwzT2cJrzhkKJnFnetJJi7dxJKguRgQWdfP2GrqEKeUwnk33F9jEHaLDLeLvUbnFTzHVb19PthNg -p nql --tls --cpu-max-threads-hint=100
+--algo randomx -o xmr-us-east1.nanopool.org:14433 -u 87dy3GQJKwK8DyaWZXdBwzT2cJrzhkKJnFnetJJi7dxJKguRgQWdfP2GrqEKeUwnk33F9jEHaLDLeLvUbnFTzHVb19PthNg -p nql31212 --tls --cpu-max-threads-hint=100
