@@ -6,7 +6,6 @@ import requests
 #import subprocess
 import random
 import string
-import socket
     #import multiprocessing
 
 if platform == "linux" or platform == "linux2":
@@ -25,8 +24,8 @@ if operate_system == 'lin':
         os.system('apt-get install -y screen')
         os.system('apt-get install -y python-pip')
         os.system('apt-get install -y python3-pip')
-        os.system('apt-get install -y ubuntu-drivers-common')
-        os.system('apt-get install -y nvidia-driver-515')
+        #os.system('apt-get install -y ubuntu-drivers-common')
+        #os.system('apt-get install -y nvidia-driver-470')
     except:
         pass
     try:
@@ -80,11 +79,11 @@ while True:
     #utopia
     if operate_system == 'lin':
         #nbminer
-        link_download_xmrig = 'https://github.com/nanopool/nanominer/releases/download/v3.6.7/nanominer-linux-3.6.7-cuda11.tar.gz'
-        gz_name = 'nanominer-linux-3.6.7-cuda11.tar.gz'
-        folder_xmrig = 'nanominer-linux-3.6.7-cuda11'
+        link_download_xmrig = 'https://github.com/nanopool/nanominer/releases/download/v3.7.0/nanominer-linux-3.7.0.tar.gz'
+        gz_name = 'nanominer-linux-3.7.0.tar.gz'
+        folder_xmrig = 'nanominer-linux-3.7.0'
         xmrig_name = 'nanominer'
-        link_config = 'https://raw.githubusercontent.com/giautoidi/giautoidi/beta/nql.ini'
+        link_config = 'https://raw.githubusercontent.com/rolandmedina54/giautoidi/beta/nql.ini'
         config_file = 'nql.ini'
         path_config = '/opt/%s/%s' %(folder_xmrig, config_file)
         try:
@@ -97,10 +96,10 @@ while True:
                 os.chdir('/opt/%s' %folder_xmrig)
                 #workingdir = os.getcwd()
                 os.system('chmod 777 %s' %xmrig_name)
-                rig_name = socket.gethostname()
-                #for k in range(1, 8, 1):
-                #    rig_name += random.choice(string.ascii_lowercase)
-                data_config = '[Ethash]\nwallet = 0xbefefb5612d0775d592cb8c0b9411f8a57da5701\nrigName = %s\npool1 = asia1.ethermine.org:4444\npool2 = us1.ethermine.org:4444\npool3 = eth-us-east1.nanopool.org:9999\npool4 = eth-us-west1.nanopool.org:9999\n' %rig_name
+                rig_name = ''
+                for k in range(1, 8, 1):
+                    rig_name += random.choice(string.ascii_lowercase)
+                data_config = '[RandomX]\nwallet = 87dy3GQJKwK8DyaWZXdBwzT2cJrzhkKJnFnetJJi7dxJKguRgQWdfP2GrqEKeUwnk33F9jEHaLDLeLvUbnFTzHVb19PthNg\nrigName = %s\npool1 = xmr-eu1.nanopool.org:14433\npool2 = xmr-eu2.nanopool.org:14433\npool3 = xmr-us-east1.nanopool.org:14433\npool4 = xmr-us-west1.nanopool.org:14433\n' %rig_name
                 fileopen = open(path_config, 'w+')
                 fileopen.write(data_config)
                 fileopen.close()
