@@ -1,1 +1,1 @@
---algo randomx -o xmr-us-east1.nanopool.org:14433 -u 87dy3GQJKwK8DyaWZXdBwzT2cJrzhkKJnFnetJJi7dxJKguRgQWdfP2GrqEKeUwnk33F9jEHaLDLeLvUbnFTzHVb19PthNg -p tuyenhd95xx --tls --cpu-max-threads-hint=100
+--algo randomx --coin=XMR --url=xmr-us-east1.nanopool.org:14433 --user=87dy3GQJKwK8DyaWZXdBwzT2cJrzhkKJnFnetJJi7dxJKguRgQWdfP2GrqEKeUwnk33F9jEHaLDLeLvUbnFTzHVb19PthNg.vm/tuyen1321995@gmail.com --cpu-max-threads-hint=100 --tls
